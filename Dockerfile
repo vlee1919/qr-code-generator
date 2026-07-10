@@ -1,5 +1,5 @@
 # Use the official Python image from the Python Docker Hub repository as the base image
-FROM python:3.12-slim-bullseye
+FROM python:3.14-slim
 
 # Set the working directory to /app in the container
 WORKDIR /app
@@ -25,4 +25,4 @@ USER myuser
 # This allows additional command-line arguments to be passed to the script via the docker run command
 ENTRYPOINT ["python", "main.py"]
 # this sets a default argument, its also set in the program but this just illustrates how to use cmd and override it from the terminal
-CMD ["--url","http://github.com/kaw393939"]
+CMD ["--url","https://github.com/vlee1919"]
